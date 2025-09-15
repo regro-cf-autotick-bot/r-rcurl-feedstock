@@ -14,7 +14,7 @@ source:
     - patches/0001-minimal-ucrt-libs.patch
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,7 +46,7 @@ requirements:
     - r-bitops
     - libcurl
     - liblzma-devel
-    - libxml2                      # [not win]
+    - libxml2-devel                      # [not win]
     - zlib
   run:
     - r-base
