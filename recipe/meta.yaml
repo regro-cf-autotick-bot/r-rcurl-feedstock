@@ -1,4 +1,4 @@
-{% set version = "1.98-1.17" %}
+{% set version = "1.98-1.18" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RCurl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RCurl/RCurl_{{ version }}.tar.gz
-  sha256: c71874a6c116169e18bf12f023fdb79d63e92177aa7ae3858b30b60be5bc6030
+  sha256: 5c4b9e7a49b8f9a34198975fda148d390933e5f69db42c91a7d2fd68c4ebdb68
   patches:
     - patches/0001-minimal-ucrt-libs.patch
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -60,8 +60,8 @@ test:
 about:
   home: http://www.omegahat.net/RCurl
   license: BSD-3-Clause
-  summary: A wrapper for 'libcurl' Provides functions to allow one to compose general HTTP requests and provides convenient functions to fetch URIs, get & post forms, etc. and process the results returned by the Web server. This provides a great deal of control over the HTTP/FTP/... connection and the form of the request
-    while providing a higher-level interface than is available just using R socket connections.  Additionally, the underlying implementation is robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads), SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects, authentication, etc.
+  summary: A wrapper for 'libcurl' Provides functions to allow one to compose general HTTP requests and provides convenient functions to fetch URIs, get & post forms, etc. and process the results returned by the Web server. This provides a great deal of control over the HTTP/FTP/... connection and the form of the 
+    request while providing a higher-level interface than is available just using R socket connections.  Additionally, the underlying implementation is robust and extensive, supporting FTP/FTPS/TFTP (uploads and downloads), SSL/HTTPS, telnet, dict, ldap, and also supports cookies, redirects, authentication, etc.
   license_family: BSD
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause
