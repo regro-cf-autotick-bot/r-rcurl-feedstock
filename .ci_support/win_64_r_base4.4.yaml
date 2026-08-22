@@ -3,7 +3,7 @@ channel_sources:
 channel_targets:
 - conda-forge main
 cran_mirror:
-- https://cran.r-project.org
+- https://cloud.r-project.org
 libcurl:
 - '8'
 liblzma_devel:
@@ -11,7 +11,7 @@ liblzma_devel:
 m2w64_c_compiler:
 - gcc
 m2w64_c_compiler_version:
-- '14'
+- '15'
 m2w64_c_stdlib:
 - m2w64-sysroot
 m2w64_c_stdlib_version:
