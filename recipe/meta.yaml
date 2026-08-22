@@ -1,4 +1,4 @@
-{% set version = "1.98-1.19" %}
+{% set version = "1.98-1.20" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RCurl_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RCurl/RCurl_{{ version }}.tar.gz
-  sha256: 57300322f0da21deef5094f12b4a7a94834e60262859e5afb5ff16ac7d431205
+  sha256: 91ec442673597261115354e791f14b59fc8dc339010ae775e03c185970a48c1b
   patches:
     - patches/0001-minimal-ucrt-libs.patch
 
